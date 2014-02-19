@@ -1,0 +1,33 @@
+[
+    {
+        "id": 0,
+        "location_id": 1,
+        "stars": 5,
+        "city_state": "Los Angeles, CA",
+        "picture": "images/pict.jpg",
+        "num_reviews": 45,
+        "checkin": false,
+        "num_photos": 0,
+        "name": "April J.",
+        "friends_num": 10,
+        "type": "regular",
+        "description": "After a full day of early drinking and \“ running \” for Bay to Breakers 2012, the only obvious choice for dinner before my flight home was to eat at Gary Danko. It was already a day of excess so why not add more excess, in the form or foie gras, to dinner as well. \n Did not have reservation but arrived shortly after they opened to grab at seat at the bar. In a way, bar seating is actually better because unlike the regular tables, you aren’t forced to choose a 3-4-5 course meal, you can go a la carte. I went for the 3 course and each was just as heavenly as the next.\r\n",
+        "review_date": "2012-05-24T15:19:02 +06:00"
+    },
+    {
+        "id": 1,
+        "location_id": 1,
+        "stars": 4,
+        "city": "Mountain View, CA",
+        "picture": "images/pict.jpg",
+        "num_reviews": 1,
+        "checkin": true,
+        "num_photos": 7,
+        "name": "Diana Y.",
+        "friends_num": 79,
+        "type": "elite12",
+        "description": "Can’t decide between 4 or 5 stars. I came here a year ago for my birthday and thought it was great, easily a 5 star review. I came here recently with my girlfriend for our anniversary dinner. Food was great, but unfortunately not spectacular from when I went for my first time. \n
+The service was \“good\”, but comparing to other restaurants of this caliber, I felt the service was a bit disconnected. We never really connected or felt at home with our server nor did we know who he/she was. The sommelier was really friendly and conversed with us, but the half bottle of French Chardonnay wasn’t that great (per her recommendation). Don’t get me wrong, the service was still good and there nothing rude or pretentious about it. It\’s just that the restaurant was super busy for a Friday night and you can just feel the chaos.\r\n",
+        "review_date": "2010-04-19T02:52:40 +05:00"
+    }
+]
