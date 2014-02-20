@@ -98,7 +98,7 @@
 								<img class="camera" src="images/camera.png" width="12" hieght="11" alt="camera icon" style="display:none">
 								<a class="number_photos" href="#" style="display:none"></a>
 								<img class="checkin" src="images/checkin.png" width="20" hieght="22" alt="checkin icon" style="display:none">
-								<span class="number_checkin" style="display:none"></span>
+								<span class="number_checkin"></span>
 							</div>
 						</td>
 					</tr>
@@ -123,7 +123,7 @@
 								<img class="camera" src="images/camera.png" width="12" hieght="11" alt="camera icon" style="display:none">
 								<a class="number_photos" href="#" style="display:none"></a>
 								<img class="checkin" src="images/checkin.png" width="20" hieght="22" alt="checkin icon" style="display:none">
-								<span class="number_checkin" style="display:none"></span>
+								<span class="number_checkin"></span>
 							</div>
 						</td>
 					</tr>
@@ -197,6 +197,25 @@ $(document).ready(function () {
             review = ".review" + data[i].id;
             alert("div" + review + "img:nth-child(1)");
             $('' + review + ' .user_img').attr('src', data[i].picture);
+            $('' + review + ' .number_friends').html(data[i].friends_num);
+            $('' + review + ' .number_reviews').html(data[i].num_reviews);
+            $('' + review + ' .user_name').attr('href', data[i].url_user);
+            $('' + review + ' .user_name').html(data[i].name);
+            $('' + review + ' .u_location').html(data[i].city_state);
+            $('' + review + ' .r_stars').attr('src', data[i].stars_url);
+            $('' + review + ' .r_date').html(data[i].review_date);
+            	if(data[i].num_photos > 0)
+            	{
+            		$('' + review + ' .camera').toggle();
+            		$('' + review + ' .number_photos').toggle();
+            		$('' + review + ' .number_photos').html(data[i].num_photos)
+            		$('' + review + ' .number_photos').attr('href', data[i].url_photos)
+            	}
+            	if (data[i].checkins > 0) 
+            	{
+            		$('' + review + ' .checkin').toggle();
+            		$('' + review + ' .number_checkin').html(data[i].checkins)
+            	}
 
         }
     });
