@@ -3,45 +3,43 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Yelp</title>
-	<link href="stylesheets/style.css" media="all" rel="stylesheet"/>	
+	<link href="css/style.css" media="all" rel="stylesheet"/>	
 </head>
 <body>
 	<div class="container">
 		<div class="main">
 			<div class="biz-top">
 				<div class="biz_info">
+					<div class="main_img">
+						<img src="images/soup.jpg" width="160" height="120">
+						</div>
 					<div class="biz-header">
 					<h1 id="biz_title">Gary Danko</h1>
 					</div>
 					<div class="biz_rating">
 						<div class="biz_rating_stars">
-							<img class="stars_img" src="images/4andhalf.png" width="84" hieght="16" alt="four and a half stars"> 
-						</div>
-						<div class="biz_review_number">
+							<img class="stars_img" src="images/4andhalf.png" width="84" hieght="16" alt="four and a half stars"> 					
 							<span class="n_reviews"> 567 reviews</span>
 						</div>
 					</div>
 					<div class="category">
-						<span class="cat">Category</span><a class="cat_link" href="#">American (New) </a><a class="cat_edit" href="#">[edit]</a>
+						<span class="cat">Category: </span><a class="cat_link" href="#">American (New) </a><a class="cat_edit" href="#">[edit]</a>
 					</div>
 					<div class="address">
 						<address>
 							<span class="street_address">800 N Point St</span><br>
 							<span class="city_address"> San Francisco, CA 94109 </span><br>
-							<span class="neighborhood_address"></span> Neighborhood: Pacific Heights</span><br>
+							<span class="neighborhood_address"> Neighborhood: Pacific Heights</span><br>
 							<span class="tel_number">(415)567-2345</span><br><br>
 							<a href="#">www.garydanko.com</a><br><br>
 						</address>
-					</div>
-					<div class="main_img">
-						<img src="images/soup.jpg" width="160" height="120">
 					</div>
 				</div>
 				<div class="biz_bottom">
 					<div class="biz_facts">
 						<div class="biz_facts_left">
 							<ul>
-								<li> <b class="fact_title">Hours:</b><span class="fact_con">Mon-Sun 5:30pm -10:30pm</span></li>
+								<li> <b class="fact_title">Hours:</b><span class="fact_con"><br>Mon-Sun 5:30pm -10:30pm</span></li>
 								<li><b class="fact_title">Good for Kids:</b><span class="fact_con">No</span></li>
 								<li><b class="fact_title">Accepts Credit Cards:</b><span class="fact_con">Yes</span></li>
 								<li><b class="fact_title">Parking:</b><span class="fact_con">Vallet</span></li>
@@ -67,10 +65,10 @@
 					</div>
 					<div class="biz_buttons">
 						<ul>
-							<li class="button_friend"><button href="#" class="button">Send to Friend</button></li>
-							<li class="button_bookmark"><button href="#" class="button">Bookmark</button></li>
-							<li class="button_phone"><button href="#" class="button">Send to Phone</button></li>
-							<li class="button_review"><button href="#" class="button2">Write a Review</button></li>
+							<li class="button_friend"><button href="#" class="button blue"><img class="write_review" src="images/email.png" width="11" hieght="7" alt="email icon"> Send to Friend</button></li>
+							<li class="button_bookmark"><button href="#" class="button blue"><img class="write_review" src="images/bookmark.png" width="10" hieght="9" alt="bookmark icon">  Bookmark</button></li>
+							<li class="button_phone"><button href="#" class="button blue" alt="phone icon"><img class="write_review" src="images/to_phone.png" width="12" hieght="12"> Send to Phone</button></li>
+							<li class="button_review"><button href="#" class="button orange"><img class="write_review" src="images/write_review.png" width="15" hieght="15" alt="review icon"> Write a Review</button></li>
 						</ul>
 					</div>
 				</div>
@@ -80,14 +78,17 @@
 					<tr class="review0">
 						<td class="user_info">
 							<div class="user_stuff">
-							<img class="user_img" width="40" hieght="40">
-							<img class="friend_img" src="images/friends.png" width="11" hieght="11" alt="number of friends icon">
-							<span class="number_friends"></span>
-							<img class="nreviews_img" src="images/nreviews.png" width="11" hieght="11" alt="number of reviews icon">
-							<span class="number_reviews"></span>
+								<img class="user_img" width="40" hieght="40">
+								<div class="right_of_img">
+									<span class="elite" style="display:none">Elite ‘12</span><br>
+									<img class="friend_img" src="images/friends.png" width="11" hieght="11" alt="number of friends icon">
+									<span class="number_friends"></span><br>
+									<img class="nreviews_img" src="images/nreviews.png" width="11" hieght="11" alt="number of reviews icon">
+									<span class="number_reviews"></span><br>
+								</div>
 							</div>
 							<div class="u_name_location">
-								<a class="user_name"></a>
+								<a class="user_name"></a><br>
 								<span class="u_location"></span>
 							</div>
 						</td>
@@ -100,22 +101,26 @@
 								<img class="checkin" src="images/checkin.png" width="20" hieght="22" alt="checkin icon" style="display:none">
 								<span class="number_checkin"></span>
 							</div>
+							<div class="review_space">
+								<span class="description"></span>
+							</div>
 						</td>
 					</tr>
 					<tr class="review1">
 						<td class="user_info">
 							<div class="user_stuff">
 							<img class="user_img" width="40" hieght="40">
+							<span class="elite" style="display:none">Elite ‘12</span><br>
 							<img class="friend_img" src="images/friends.png" width="11" hieght="11" alt="number of friends icon">
-							<span class="number_friends"></span>
+							<span class="number_friends"></span><br>
 							<img class="nreviews_img" src="images/nreviews.png" width="11" hieght="11" alt="number of reviews icon">
-							<span class="number_reviews"></span>
+							<span class="number_reviews"></span><br>
 							</div>
 							<div class="u_name_location">
-								<a class="user_name" href=""></a>
+								<a class="user_name" href=""></a><br>
 								<span class="u_location"></span>
 							</div>
-						</td>
+						</td> 
 						<td class="review_info">
 							<div class="review_meta"> 
 								<img class="r_stars" src="" width="84" hieght="16" alt=" stars review">
@@ -125,6 +130,9 @@
 								<img class="checkin" src="images/checkin.png" width="20" hieght="22" alt="checkin icon" style="display:none">
 								<span class="number_checkin"></span>
 							</div>
+							<div class="review_space">
+								<span class="description"></span>
+							</div>
 						</td>
 					</tr>
 				</table>
@@ -133,8 +141,9 @@
 		<div class="sidebar">
 			<div class="also_viewed">
 				<h2 class="also_viewed_title"> People Who Viewed This Also Viewed... </h2>
-				<div class="biz_1">
-					<h3 class="also_biz_title">La Folie</h3>
+				<div class="rec_business">
+				<img src="images/r1.png" width="76" height="76" alt="image of La Folie restaurant">
+					<a class="also_biz_title" href="/#">La Folie</a>
 					<div class="also_biz_stars">
 						<img class="stars_img" src="images/5_small.png" width="49" hieght="9" alt="four and a half stars">
 						<span class="also_n_reviews"> 287 reviews</span>
@@ -143,8 +152,9 @@
 						<p> "Butter poached lobster was amazingly delicious"</p>
 					</div>
 				</div>
-				<div class="biz_2">
-					<h3 class="also_biz_title">Chapeau!</h3>
+				<div class="rec_business">
+					<img src="images/r4.png" width="76" height="76" alt="image of Chapeau! restaurant">
+					<a class="also_biz_title" href="/#">Chapeau!</a>
 					<div class="also_biz_stars">
 						<img class="stars_img" src="images/4andhalf_sm.png" width="49" hieght="9" alt="four and a half stars">
 						<span class="also_n_reviews"> 59 reviews</span>
@@ -153,8 +163,9 @@
 						<p> “The foie gras totally exceeded my expectations.”</p>
 					</div>
 				</div>
-				<div class="biz_3">
-					<h3 class="also_biz_title">Kokkari</h3>
+				<div class="rec_business">
+				<img src="images/r5.png" width="76" height="76" alt="image of Kokkari restaurant">					
+					<a class="also_biz_title" href="/#">Kokkari</a>
 					<div class="also_biz_stars">
 						<img class="stars_img" src="images/5_small.png" width="49" hieght="9" alt="four and a half stars">
 						<span class="also_n_reviews"> 900 reviews</span>
@@ -163,24 +174,26 @@
 						<p> “zucchini cakes were hands down amazing.”</p>
 					</div>
 				</div>
-				<div class="biz_4">
-					<h3 class="also_biz_title">Boulevard</h3>
+				<div class="rec_business">
+					<img src="images/r3.png" width="76" height="76" alt="image of Boulevard restaurant" >
+					<a class="also_biz_title" href="/#">Boulevard</a>
 					<div class="also_biz_stars">
 						<img class="stars_img" src="images/3_small.png" width="49" hieght="9" alt="four and a half stars">
 						<span class="also_n_reviews"> 2144 reviews</span>
 					</div>
 					<div class="also_neighborhood"> 
-						<span class="also_hood"> Neighborhood: Marina </span>
+						<p class="also_hood"> Neighborhood: Marina </p>
 					</div>
 				</div>
-				<div class="biz_5">
-					<h3 class="also_biz_title">The House</h3>
+				<div class="rec_business">
+					<img src="images/r2.png" width="76" height="76" alt="image of the house restaurant">
+					<a class="also_biz_title" href="/#">The House</a>
 					<div class="also_biz_stars">
 						<img class="stars_img" src="images/4andhalf_sm.png" width="49" hieght="9" alt="four and a half stars">
 						<span class="also_n_reviews"> 1005 reviews</span>
 					</div>
 					<div class="also_neighborhood"> 
-						<span class="also_hood"> Neighborhood: Cow Hollow </span>
+						<p class="also_hood"> Neighborhood: Cow Hollow </p>
 					</div>
 				</div>
 			</div>
@@ -195,7 +208,6 @@ $(document).ready(function () {
         var data = json.data;
         for (var i = 0; i < data.length; i++) {
             review = ".review" + data[i].id;
-            alert("div" + review + "img:nth-child(1)");
             $('' + review + ' .user_img').attr('src', data[i].picture);
             $('' + review + ' .number_friends').html(data[i].friends_num);
             $('' + review + ' .number_reviews').html(data[i].num_reviews);
@@ -204,19 +216,27 @@ $(document).ready(function () {
             $('' + review + ' .u_location').html(data[i].city_state);
             $('' + review + ' .r_stars').attr('src', data[i].stars_url);
             $('' + review + ' .r_date').html(data[i].review_date);
+            	
             	if(data[i].num_photos > 0)
             	{
             		$('' + review + ' .camera').toggle();
             		$('' + review + ' .number_photos').toggle();
-            		$('' + review + ' .number_photos').html(data[i].num_photos)
-            		$('' + review + ' .number_photos').attr('href', data[i].url_photos)
+            		$('' + review + ' .number_photos').html(data[i].num_photos);
+            		$('' + review + ' .number_photos').attr('href', data[i].url_photos);
             	}
+            	
             	if (data[i].checkins > 0) 
             	{
             		$('' + review + ' .checkin').toggle();
-            		$('' + review + ' .number_checkin').html(data[i].checkins)
+            		$('' + review + ' .number_checkin').html(data[i].checkins);
             	}
 
+            	if (data[i].elite === 1)
+            	{
+            		$('' + review + ' .elite').toggle();
+            	}
+     			
+     			$('' + review + ' .description').html(data[i].description);
         }
     });
 });
