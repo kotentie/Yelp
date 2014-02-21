@@ -30,7 +30,7 @@
 							<span class="street_address">800 N Point St</span><br>
 							<span class="city_address"> San Francisco, CA 94109 </span><br>
 							<span class="neighborhood_address"> Neighborhood: Pacific Heights</span><br>
-							<span class="tel_number">(415)567-2345</span><br><br>
+							<span class="tel_number">(415) 567-2345</span><br><br>
 							<a href="#">www.garydanko.com</a><br><br>
 						</address>
 					</div>
@@ -208,6 +208,7 @@ $(document).ready(function () {
         var data = json.data;
         for (var i = 0; i < data.length; i++) {
             review = ".review" + data[i].id;
+            // for an unspicfied number reviews per page I would have used $.clone and $.append
             $('' + review + ' .user_img').attr('src', data[i].picture);
             $('' + review + ' .number_friends').html(data[i].friends_num);
             $('' + review + ' .number_reviews').html(data[i].num_reviews);
@@ -221,14 +222,14 @@ $(document).ready(function () {
             	{
             		$('' + review + ' .camera').toggle();
             		$('' + review + ' .number_photos').toggle();
-            		$('' + review + ' .number_photos').html(data[i].num_photos);
+            		$('' + review + ' .number_photos').html(data[i].num_photos + ' photos ');
             		$('' + review + ' .number_photos').attr('href', data[i].url_photos);
             	}
             	
             	if (data[i].checkins > 0) 
             	{
             		$('' + review + ' .checkin').toggle();
-            		$('' + review + ' .number_checkin').html(data[i].checkins);
+            		$('' + review + ' .number_checkin').html(data[i].checkins + ' Check-in here ');
             	}
 
             	if (data[i].elite === 1)
