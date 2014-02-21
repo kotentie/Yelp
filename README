@@ -1,0 +1,25 @@
+
+Hi Welcome to my Yelp application Challenge. 
+ 
+
+If you are on git and want to download and install this:
+
+Simply type into your command line: 
+
+git clone https://github.com/kotentie/Yelp.git "name you want to give folder"
+
+
+
+I've found that some browsers have trouble accepting a json object without headers from a server. If that happens try using this command:
+
+
+python -m SimpleHTTPServer
+
+
+it will launch a very basic server that will wrap the json file in the appropriate headers.
+
+Thanks for giving me a shot Yelper!
+
+Cheer,
+Jake
+
